@@ -6,14 +6,26 @@ def main():
         print("False")
         
 def is_valid(s):
-    if s.isalnum() and 1 < len(s) <7 and s[:2].isalpha() :
-        if s[2:].isdigit("0"):
-            return False
-        elif s[2:].isdigit() and s.endswith().isalpha():
-            return False
+    while True:
+        if s.isalnum() and 1 < len(s) <7 and s[:2].isalpha() :
+            if s[:].isalpha() :
+                return True
+            else:
+                digits = 0 #Number of digits in license plate
+                for i in s:
+                    if i.isdigit:
+                        digits= digits + 1
+                if digits == 1 and s[-1].isdigit and s[-1] !=0 :
+                    return True
+                elif digits == 2 and s[-2:].isdigit and s[-2] !=0 :
+                    return True
+                elif digits == 3 and s[-3:].isdigit and s[-3] !=0 :
+                    return True
+                elif digits == 4 and s[-4:].isdigit and s[-4] !=0 :
+                    return True
+                else:
+                    return False
         else:
-            return True
-    else:
-        return False
+            return False
           
 main()
