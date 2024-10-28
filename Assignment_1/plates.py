@@ -17,7 +17,7 @@ def is_valid(s):
                         digits= digits + 1
                         if digits == 1 and s[-1].isdigit and s[-1] != '0' :
                             return True
-                        elif digits == 2 and s[::-2].isdigit and s[-2] != '0' :
+                        elif digits == 2 and s[-2:].isdigit and s[-2] != '0' :
                             return True
                         elif digits == 3 and s[-3:].isdigit and s[-3] != '0' :
                             return True
