@@ -20,4 +20,4 @@ while True:
                 print("$",T)
     except EOFError:
         break
-main()
+
